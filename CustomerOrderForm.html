@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WW Clothing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="js/form.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet"> 
+    <link href="Customerform.css" rel="stylesheet">
+    <style>
+        body {
+          background-image: url(Images/hike2.jpg);
+        }
+        </style>
+</head>
+<body>
+
+  <form action="mailto:p.shanmugam832@mybvc.ca" method="post" enctype="text/plain">
+    <label for="first_name"> First Name</label>
+    <input id="first_name" placeholder="First_name" class="textInput" type="text" name="first_name"><br/>
+
+    <label for="last_name"> Last Name</label>
+    <input id="last_name" placeholder="Last_name" class="textInput" type="text" name="last_name"><br/>
+
+    <label for="studentEmail"> Email</label>
+    <input id="customerEmail" placeholder="email@domain.com" class="textInput" type="email" name="customerEmail"><br/>
+
+    <label for="phone">Phone</label>
+    <input id="phone" placeholder="123-123-1234" class="textInput" type="phone" name="phone"><br/>
+
+    <label for="Address">Address</label>
+    <input id="Address" placeholder="1st Ave NW" class="textInput" type="Address" name="Address"><br/>
+
+    <label for="postcode">Post Code</label>
+    <input id="postcode" placeholder="X9X 9X9" class="textInput" type="postcode" name="postcode"><br/>
+    
+    <label>Interested in Custom Clothing?</label>
+    <input type="radio" value="yes" id="lunchYes" class="radioInput" name="lunch"><label class="radioLabel" for="lunchYes">Yes</label>
+    <input type="radio" value="no" id="lunchNo" class="radioInput" name="lunch"><label class="radioLabel" for="lunchNo">No</label>
+    <br/>
+
+    <label for="">Today's Choice?</label>
+    <select name="choice" id="choice" class="textInput">
+        <option value="">----- Select -----</option>
+        <option value="Jacket">Jacket</option>
+        <option value="Coat">Coat</option>
+        <option value="Tshirt">Tshirt</option>
+        <option value="Jeans">Jeans</option>
+        <option value="Gloves">Winter gloves</option>
+    </select>
+    <label for="">Quantity</label>
+    <select name="tickets" id="tickets" class="textInput">
+        <option value="">----- Select -----</option>
+        <option value="1">1</option>
+        <option value="2">1-5</option>
+        <option value="3">5-10</option>
+    </select><br/>
+
+    <label for="">Nearest Franchise?</label>
+    <select name="franchise" id="franchise" class="textInput">
+        <option value="">----- Select -----</option>
+        <option value="Calgary">Calgary</option>
+        <option value="Banff">Banff</option>
+        <option value="Canmore">Canmore</option>
+        <option value="British Columbia">British Columbia</option>
+        <option value="Jasper">Jasper</option>
+    </select>
+    <br/><br/>
+
+    <input type="submit" value="Submit" class="btn">
+    <p id="errors"></p>
+  </form>  
+  
+  <div class="formData">
+    <p id="formResult"><<<=======Fill details here</p>
+    <a href="Index.html">Visit Home Page</a>
+  </div>
+</body>
+</html>
